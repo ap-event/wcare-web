@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: wcareweb
-  namespace: wcare-ns
+  namespace: wcdemo2-cn
   labels:
     app: wcare-application
     subname: wcareweb
