@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wcareweb
-  namespace: wcare-ns
+  namespace: wcdemo2-cn
   labels:
     app: wcare-application
     subname: wcareweb
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: container-wcareweb
-          image: image-registry.openshift-image-registry.svc:5000/wcare-ns/wcareweb:latest
+          image: image-registry.openshift-image-registry.svc:5000/wcdemo2-cn/wcareweb:latest
           imagePullPolicy: Always
           ports:
             - name: my-http
